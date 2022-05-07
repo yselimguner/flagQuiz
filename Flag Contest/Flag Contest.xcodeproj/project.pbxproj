@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		902ADC43282553DA009D65C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902ADC42282553DA009D65C3 /* AppDelegate.swift */; };
+		902ADC45282553DA009D65C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902ADC44282553DA009D65C3 /* SceneDelegate.swift */; };
+		902ADC47282553DA009D65C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902ADC46282553DA009D65C3 /* ViewController.swift */; };
+		902ADC4A282553DA009D65C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 902ADC48282553DA009D65C3 /* Main.storyboard */; };
+		902ADC4C282553DC009D65C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 902ADC4B282553DC009D65C3 /* Assets.xcassets */; };
+		902ADC4F282553DC009D65C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 902ADC4D282553DC009D65C3 /* LaunchScreen.storyboard */; };
+		902ADC57282556C9009D65C3 /* QuizScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902ADC56282556C9009D65C3 /* QuizScreenViewController.swift */; };
+		902ADC59282556D9009D65C3 /* ResultScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902ADC58282556D9009D65C3 /* ResultScreenViewController.swift */; };
+		903C92E72826793F00449249 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 903C92E62826793700449249 /* libsqlite3.tbd */; };
+		903C92F42826797200449249 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 903C92EB2826797200449249 /* FMDatabaseQueue.m */; };
+		903C92F52826797200449249 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 903C92EC2826797200449249 /* FMDatabase.m */; };
+		903C92F62826797200449249 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 903C92EE2826797200449249 /* FMDatabasePool.m */; };
+		903C92F72826797200449249 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 903C92EF2826797200449249 /* FMResultSet.m */; };
+		903C92F82826797200449249 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 903C92F12826797200449249 /* FMDatabaseAdditions.m */; };
+		903C92FE28267AB300449249 /* Flags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903C92FD28267AB300449249 /* Flags.swift */; };
+		903C930028267B4D00449249 /* Flagsdao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903C92FF28267B4D00449249 /* Flagsdao.swift */; };
+		903C930C2826A32F00449249 /* flagquiz.db in Resources */ = {isa = PBXBuildFile; fileRef = 903C930B2826A32F00449249 /* flagquiz.db */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		902ADC3F282553DA009D65C3 /* Flag Contest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flag Contest.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		902ADC42282553DA009D65C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		902ADC44282553DA009D65C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		902ADC46282553DA009D65C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		902ADC49282553DA009D65C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		902ADC4B282553DC009D65C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		902ADC4E282553DC009D65C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		902ADC50282553DC009D65C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		902ADC56282556C9009D65C3 /* QuizScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizScreenViewController.swift; sourceTree = "<group>"; };
+		902ADC58282556D9009D65C3 /* ResultScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultScreenViewController.swift; sourceTree = "<group>"; };
+		903C92E62826793700449249 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		903C92E82826797100449249 /* Flag Contest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Flag Contest-Bridging-Header.h"; sourceTree = "<group>"; };
+		903C92E92826797200449249 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		903C92EA2826797200449249 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		903C92EB2826797200449249 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		903C92EC2826797200449249 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		903C92ED2826797200449249 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		903C92EE2826797200449249 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		903C92EF2826797200449249 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		903C92F02826797200449249 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		903C92F12826797200449249 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		903C92F22826797200449249 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		903C92F32826797200449249 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		903C92FD28267AB300449249 /* Flags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flags.swift; sourceTree = "<group>"; };
+		903C92FF28267B4D00449249 /* Flagsdao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flagsdao.swift; sourceTree = "<group>"; };
+		903C930B2826A32F00449249 /* flagquiz.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = flagquiz.db; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		902ADC3C282553DA009D65C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				903C92E72826793F00449249 /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		902ADC36282553DA009D65C3 = {
+			isa = PBXGroup;
+			children = (
+				902ADC41282553DA009D65C3 /* Flag Contest */,
+				902ADC40282553DA009D65C3 /* Products */,
+				903C92E52826793700449249 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		902ADC40282553DA009D65C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				902ADC3F282553DA009D65C3 /* Flag Contest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		902ADC41282553DA009D65C3 /* Flag Contest */ = {
+			isa = PBXGroup;
+			children = (
+				903C930B2826A32F00449249 /* flagquiz.db */,
+				902ADC42282553DA009D65C3 /* AppDelegate.swift */,
+				902ADC44282553DA009D65C3 /* SceneDelegate.swift */,
+				902ADC46282553DA009D65C3 /* ViewController.swift */,
+				902ADC48282553DA009D65C3 /* Main.storyboard */,
+				902ADC4B282553DC009D65C3 /* Assets.xcassets */,
+				902ADC4D282553DC009D65C3 /* LaunchScreen.storyboard */,
+				902ADC50282553DC009D65C3 /* Info.plist */,
+				902ADC56282556C9009D65C3 /* QuizScreenViewController.swift */,
+				902ADC58282556D9009D65C3 /* ResultScreenViewController.swift */,
+				903C92F32826797200449249 /* FMDatabase.h */,
+				903C92EC2826797200449249 /* FMDatabase.m */,
+				903C92F02826797200449249 /* FMDatabaseAdditions.h */,
+				903C92F12826797200449249 /* FMDatabaseAdditions.m */,
+				903C92F22826797200449249 /* FMDatabasePool.h */,
+				903C92EE2826797200449249 /* FMDatabasePool.m */,
+				903C92ED2826797200449249 /* FMDatabaseQueue.h */,
+				903C92EB2826797200449249 /* FMDatabaseQueue.m */,
+				903C92E92826797200449249 /* FMDB.h */,
+				903C92EA2826797200449249 /* FMResultSet.h */,
+				903C92EF2826797200449249 /* FMResultSet.m */,
+				903C92E82826797100449249 /* Flag Contest-Bridging-Header.h */,
+				903C92FD28267AB300449249 /* Flags.swift */,
+				903C92FF28267B4D00449249 /* Flagsdao.swift */,
+			);
+			path = "Flag Contest";
+			sourceTree = "<group>";
+		};
+		903C92E52826793700449249 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				903C92E62826793700449249 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		902ADC3E282553DA009D65C3 /* Flag Contest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 902ADC53282553DC009D65C3 /* Build configuration list for PBXNativeTarget "Flag Contest" */;
+			buildPhases = (
+				902ADC3B282553DA009D65C3 /* Sources */,
+				902ADC3C282553DA009D65C3 /* Frameworks */,
+				902ADC3D282553DA009D65C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Flag Contest";
+			productName = "Flag Contest";
+			productReference = 902ADC3F282553DA009D65C3 /* Flag Contest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		902ADC37282553DA009D65C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					902ADC3E282553DA009D65C3 = {
+						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 1330;
+					};
+				};
+			};
+			buildConfigurationList = 902ADC3A282553DA009D65C3 /* Build configuration list for PBXProject "Flag Contest" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 902ADC36282553DA009D65C3;
+			productRefGroup = 902ADC40282553DA009D65C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				902ADC3E282553DA009D65C3 /* Flag Contest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		902ADC3D282553DA009D65C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				902ADC4F282553DC009D65C3 /* LaunchScreen.storyboard in Resources */,
+				902ADC4C282553DC009D65C3 /* Assets.xcassets in Resources */,
+				903C930C2826A32F00449249 /* flagquiz.db in Resources */,
+				902ADC4A282553DA009D65C3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		902ADC3B282553DA009D65C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				902ADC47282553DA009D65C3 /* ViewController.swift in Sources */,
+				902ADC57282556C9009D65C3 /* QuizScreenViewController.swift in Sources */,
+				902ADC43282553DA009D65C3 /* AppDelegate.swift in Sources */,
+				903C92F52826797200449249 /* FMDatabase.m in Sources */,
+				903C92FE28267AB300449249 /* Flags.swift in Sources */,
+				902ADC45282553DA009D65C3 /* SceneDelegate.swift in Sources */,
+				903C930028267B4D00449249 /* Flagsdao.swift in Sources */,
+				903C92F62826797200449249 /* FMDatabasePool.m in Sources */,
+				903C92F72826797200449249 /* FMResultSet.m in Sources */,
+				902ADC59282556D9009D65C3 /* ResultScreenViewController.swift in Sources */,
+				903C92F42826797200449249 /* FMDatabaseQueue.m in Sources */,
+				903C92F82826797200449249 /* FMDatabaseAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		902ADC48282553DA009D65C3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				902ADC49282553DA009D65C3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		902ADC4D282553DC009D65C3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				902ADC4E282553DC009D65C3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		902ADC51282553DC009D65C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		902ADC52282553DC009D65C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		902ADC54282553DC009D65C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L26444XKX4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Flag Contest/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yselimguner.Flag-Contest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Flag Contest/Flag Contest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		902ADC55282553DC009D65C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L26444XKX4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Flag Contest/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yselimguner.Flag-Contest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Flag Contest/Flag Contest-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		902ADC3A282553DA009D65C3 /* Build configuration list for PBXProject "Flag Contest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				902ADC51282553DC009D65C3 /* Debug */,
+				902ADC52282553DC009D65C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		902ADC53282553DC009D65C3 /* Build configuration list for PBXNativeTarget "Flag Contest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				902ADC54282553DC009D65C3 /* Debug */,
+				902ADC55282553DC009D65C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 902ADC37282553DA009D65C3 /* Project object */;
+}
